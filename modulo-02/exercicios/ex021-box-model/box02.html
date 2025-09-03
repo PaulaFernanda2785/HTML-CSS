@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+</head>
+<style>
+    h1 {/* Estilização do título == box-level*/
+        display: block;
+        font: 24px bold Arial, sans-serif;/* Define a fonte do título */
+        background-color: lightblue;
+        height: 60px;
+        width: 600px;
+        border-top: 20px solid blue;
+        border-right: 5px solid rgb(72, 72, 184);
+        border-bottom: 5px solid rgb(148, 148, 181);
+        border-left: 5px solid rgb(17, 17, 31); 
+        border-radius: 10px; /* Bordas arredondadas */
+        border-bottom-left-radius: 0; /* Bordas inferiores esquerdas não arredondadas */
+        box-shadow: 5px 5px 20px gray; /* Sombra da caixa */
+        /*padding-top: 20px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;*/
+        padding: 10px 5px 5px 10px; /* Espaçamento interno */
+        margin: auto; /* Centraliza horizontalmente */
+        /* margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;*/  
+        text-align: center;
+        outline: 2px solid red; /* Contorno da caixa */
+        outline-offset: 2px; /* Espaçamento entre o contorno e a borda */
+    }
+    a {/* Estilização dos links == inline-level */
+        display: inline;
+        border: 2px solid gray;
+        margin: 1px;
+        color: darkblue;
+        padding: 1px;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Este é um parágrafo que demonstra o comportamento de uma caixa de nível de bloco (block-level box). As caixas de nível de bloco ocupam toda a largura disponível e começam em uma nova linha. Mas, os links <a href="#">são elementos em linha (inline-level)</a> e não se comportam da mesma forma.</p>
+</body>
+</html>

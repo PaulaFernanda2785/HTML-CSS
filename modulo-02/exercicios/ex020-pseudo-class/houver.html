@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif; /* Define a fonte para o corpo do documento */
+    }
+    div > p{
+        display: none; /* Esconde o parágrafo inicialmente */
+    }
+    div:hover{
+        text-align: center;
+        color: rgb(255, 3, 3); /* Cor do texto */
+        background-color: lightgray; /* Cor de fundo */
+        width: 200px; /* Largura */
+        height: 500px; /* Altura */
+        cursor: pointer; /* Muda o cursor para indicar que é interativo */
+        border: 2px solid black; /* Borda */
+    }
+    div:hover > p{
+        display: block; /* Mostra o parágrafo quando o mouse está sobre a div */
+        color: royalblue; /* Cor do texto */
+        background-color: lightgray; /* Cor de fundo */
+        width: 200px; /* Largura */
+        height: 100px; /* Altura */
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Efeitos de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+        <p>OUTRO TEXTO ESCONDIDO</p>
+        <p>UM TERCEIRO TEXTO ESCONDIDO</p>
+        <p>UM QUARTO TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do texto</p>
+</body>
+</html>

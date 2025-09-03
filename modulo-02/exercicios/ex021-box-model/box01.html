@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    /* ======Estilos da caixa===== */
+    .box {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 10px;
+        outline: 5px dashed red;
+        background-color: rgb(120, 143, 151);
+    }
+    /* =====Fim dos estilos da caixa====== */
+    /* =====Estilos do texto====== */
+    .box p {
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal;
+        text-align: center;
+        font-size: 16px;
+        color: white;
+    }
+    /* =====Fim dos estilos do texto====== */
+    .box:hover {
+        background-color: rgb(100, 120, 130);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: 10px solid blue;
+        outline: 7px dashed green;
+    }
+    /* =====Fim dos estilos do hover====== */
+</style>
+<body>
+    <div class="box">
+        <p>Conteúdo da caixa</p>
+    </div>
+    <div class="box">
+        <p>Segunda caixa</p>
+    </div>
+    <div class="box">
+        <p>Terceira caixa</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+
+    <video width="320" height="180" poster="imagem/chatgpt-400.png" controls autoplay loop>
+        <source src="midia/meu_video_3.Tiny.mp4" type="video/mp4">
+        <source src="midia/meu_video_1.webm" type="video/webm">
+        <source src="midia/meu_video_1.ogg" type="video/ogg">
+        <p>Seu navegador não suporta o elemento de video.</p> <!--colocar os formatos de midias de videos de cima para baixo de forma do menor para o maior de capacidade-->
+    </video>
+
+    <h1>Inserindo vídeo do YouTube</h1>
+    <p>Este video está hospedado no YouTube.</p>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/MQe4mlvl5Ik?si=lpfcgeypqwBSNH4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

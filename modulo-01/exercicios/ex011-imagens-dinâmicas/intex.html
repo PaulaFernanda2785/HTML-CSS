@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos deferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzir Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio preload="metadata" autoplay loop  controls>
+        <source src="midias/Scale The Wall - Everet Almond.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta o elemento de áudio.
+        <a href="midias/Scale The Wall - Everet Almond.mp3">Baixar áudio</a></p>
+    </audio>
+
+    <footer>
+        <p><em>&copy;2025</em> Desenvolvido por <strong>Paula Fernanda</strong></p>
+    </footer>
+</body>
+</html>

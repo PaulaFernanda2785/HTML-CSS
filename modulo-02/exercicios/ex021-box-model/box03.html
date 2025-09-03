@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="stylesheet" href="stylebox03.css">
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <h1>Meu Site</h1><!--Titulo-->
+        <nav><!--Navegação-->     
+                <a href="#assuntos">Assuntos</a><!--Link para a página inicial-->
+                <a href="#noticias">Notícias</a><!--Link para a página sobre-->
+                <a href="#contato">Contato</a><!--Link para a página de contato-->
+                <a href="#blog">Blog</a><!--Link para o blog-->
+                <a href="#servicos">Serviços</a><!--Link para a página de serviços-->
+        </nav>
+    </header>
+    <main><!--Conteúdo Principal-->
+            <section id="assuntos"><!--Seção de Assuntos-->
+                <h2>Assuntos</h2>
+                <p>Conteúdo sobre assuntos relevantes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti praesentium dicta voluptatum distinctio quas explicabo esse odio, quidem aut tenetur blanditiis corporis amet natus commodi harum. Veniam, sit perferendis!</p>
+            </section>
+        <section id="noticias"><!--Seção de Notícias-->
+            <article><!--Artigo de Notícia-->
+                <div id="noticia1">
+                    <h2>Notícia 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo voluptatum iusto doloribus repellendus, labore consequuntur atque fugiat voluptates. Molestias quae numquam laborum voluptatibus at consequatur iure earum, eaque distinctio?</p>
+                    <aside><!--Informações adicionais-->
+                        <p>Informações adicionais sobre a notícia 1.</p>
+                    </aside>
+                </div>
+                <div id="noticia2">
+                    <h2>Notícia 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo voluptatum iusto doloribus repellendus, labore consequuntur atque fugiat voluptates. Molestias quae numquam laborum voluptatibus at consequatur iure earum, eaque distinctio?</p>
+                    <aside><!--Informações adicionais-->
+                        <p>Informações adicionais sobre a notícia 2.</p>
+                    </aside>
+                </div>
+                <div id="noticia3">
+                    <h2>Notícia 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo voluptatum iusto doloribus repellendus, labore consequuntur atque fugiat voluptates. Molestias quae numquam laborum voluptatibus at consequatur iure earum, eaque distinctio?</p>
+                    <aside><!--Informações adicionais-->
+                        <p>Informações adicionais sobre a notícia 3.</p>
+                    </aside>
+                </div>
+            </article>
+        </section>
+        <section id="contato"><!--Seção de Contato-->
+            <h2>Contato</h2>
+            <form><!--Formulário de Contato-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required value="Digite seu nome completo">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required value="Digite seu e-mail completo">
+                <br><br>
+                <label for="mensagem">Mensagem:</label>
+                <br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required title="Digite sua mensagem">Digite sua mensagem...</textarea>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section id="blog"><!--Seção de Blog-->
+            <h2>Blog</h2>
+            <p>Últimas postagens do blog. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+        <section id="servicos"><!--Seção de Serviços-->
+            <h2>Serviços</h2>
+            <p>Descrição dos serviços oferecidos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <section id="bolas">
+        <div class="bola"></div>
+        <div class="bola"></div>
+    </section>
+</body>
+</html>

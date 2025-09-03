@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            * = todos os elementos
+            div = elemento div
+            p = elemento parágrafo
+            a = elemento link
+            : pseudo-classes
+            :: Pseudo-elementos
+            > filho direto
+            < elemento pai
+            + elemento irmão
+            ~ elemento irmão geral
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        a:visited{/* quando o link já foi visitado */
+            color: rgba(255, 0, 0, 0.26);
+        }
+        a:hover{/* quando o mouse passa sobre o link */
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{/* quando o link está sendo clicado */
+            color: yellow;
+        }
+        a::before{/* ícone antes do link */
+            content: "🔗";/* texto que aparece antes do link */
+            margin-right: 8px;/* espaço entre o ícone e o texto do link */
+        }
+        a:hover::after{/* ícone após o link */
+            content: "[Link]";/* texto que aparece após o link */
+            color: darkgray;/* define a cor do texto como cinza escuro */
+            margin-left: 8px;/* espaço entre o texto do link e o ícone */
+            text-decoration: none;/* remove o sublinhado do texto */
+        }
+    </style>
+<body>
+    <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="nofollow ">Repositorio GitHub</a></li>
+            <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="nofollow">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow">Site do Cursoemvideo</a></li>
+        </ul>
+</body>
+</html>

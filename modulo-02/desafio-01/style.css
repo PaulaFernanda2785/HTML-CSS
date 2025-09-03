@@ -1,0 +1,174 @@
+@charset "UTF-8";
+:root {
+    --cor-fundo: linear-gradient(to right, #74c396, hsla(140, 40%, 75%, 0.785));
+    --cor-fundo-cabecalho: linear-gradient(to top, #1A5C38, hsla(140, 40%, 75%, 0.785));
+    --cor-texto: #000000;
+    --cor-texto-destaque: #1D643C;
+    --cor-texto-secundario: #ffffff;
+}
+/* CSS Document */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    padding: 0;
+    background-image: linear-gradient(to right, #74c396, hsla(140, 40%, 75%, 0.785));
+    color: #000000;
+    scroll-behavior: smooth;/* Adicionando rolagem suave */
+    transition: background-color 0.3s, color 0.3s;
+}
+header {
+    background-image: var(--cor-fundo-cabecalho);
+    color: var(--cor-texto-secundario);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, border-shadow 0.3s;
+    backdrop-filter: blur(10px);
+}
+header h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+nav {
+    margin-top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    min-height: 30px;
+    padding: 0 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.234);
+    color: rgba(255, 255, 255, 0.616);
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+}
+main {
+    padding: 100px 20px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section {
+    height: calc(100vh - 200px);
+    background-color: white;
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.134);
+    height: auto;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+section h1 {
+    color: var(--cor-texto-destaque);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-top: 40px;
+}
+section h2 {
+    background-image: var(--cor-fundo);
+    color: var(--cor-texto-destaque);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+section p {
+    text-indent: 30px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    height: auto;
+}
+section picture {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+section img {
+    justify-content: center;
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    /* Adicionando efeito de zoom ao passar o mouse */
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+section a {
+    color: var(--cor-texto-destaque);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+section a:hover {
+    text-decoration: underline;
+    color: var(--cor-texto);
+}
+section > iframe {
+
+    height: 30vh;
+    width: 100%;
+    border: none;
+}
+section > iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-image: var(--cor-fundo-cabecalho);
+    color: var(--cor-texto-secundario);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1000;
+    margin-top: 20px;
+    margin: 0;
+    border: none;
+}

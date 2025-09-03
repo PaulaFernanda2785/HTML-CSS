@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* em HTML é id = em CSS é #*/
+/* em HTML é class = em CSS é . */
+/* Definindo estilos globais */
+body{
+    background-color: rgb(217, 244, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+/* Definindo estilos para títulos */
+h1{
+    color: blue;
+    font-weight: bold;
+    text-align: left;
+}
+h1#titulo-principal{/*id # titulo-principal */
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+/* Definindo estilos para subtítulos */
+h2{
+    color: rgb(75, 75, 161);
+}
+h2.basico{/*class . basico*/
+    color: green;
+}
+h2.intermediario{/*class . intermediario*/
+    color: orange;
+}
+h2.avancado{/*class . avancado*/
+    color: red;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+span.basico{/*class . basico*/
+    font-weight: bold;
+    color: green;
+}
+span.intermediario{/*class . intermediario*/
+    font-weight: bold;
+    color: orange;
+}
+span.avancado{/*class . avancado*/
+    font-weight: bold;
+    color: red;
+}
+.destaque{/*class . destaque*/
+    background-color: rgba(191, 146, 138, 0.653);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;/*exibe os elementos na mesma linha*/
+            background-color: lightpink;/*cor de fundo*/
+            border: 1px solid black;/*borda - shorthand*/
+            margin: 2px;/*margem*/
+            padding: 20px;/*espaçamento interno*/
+            border-radius: 5px;/*bordas arredondadas - shorthand*/
+            box-sizing: border-box;/*inclui bordas e preenchimento na largura e altura totais*/
+            overflow: hidden;/*oculta o conteúdo que ultrapassa as bordas*/
+            text-overflow: ellipsis;/*adiciona reticências (...) ao texto que ultrapassa o limite*/
+            white-space: nowrap;/*impede a quebra de linha*/
+            direction: ltr;/*orientação do texto*/
+            box-shadow: 1px 1px 5px gray;/*sombra - shorthand*/
+            text-align: center;/*alinhamento do texto*/
+            height: 200px;/*altura*/
+            width: 200px;/*largura*/
+        }
+        div:hover{/*pseudo-classe - quando o mouse estiver sobre o elemento*/
+            background-color: lightblue;/*cor de fundo*/
+            cursor: pointer;/*cursor muda para indicar que é clicável*/
+            box-shadow: 1px 1px 5px gray;/*sombra - shorthand*/
+            transform: scale(1.05);/*aumenta levemente o tamanho do elemento*/
+            transition: all 0.3s ease;/*transição suave para todas as propriedades*/
+        }
+        #d1:hover{/*estilo específico para o elemento com id "d1"*/
+            font-size: 20px;/*tamanho da fonte*/
+            font-family: Arial, sans-serif;/*família da fonte*/
+            background-color: darkblue;/*cor do texto*/
+            color: white;
+            top: calc(50% - 100px);/*centraliza verticalmente*/
+        }
+        #d2:hover{/*estilo específico para o elemento com id "d2"*/
+            font-size: 20px;/*tamanho da fonte*/
+            font-family: Arial, sans-serif;/*família da fonte*/
+            background-color: rgb(255, 4, 4);/*cor do texto*/
+            color: white;
+            top: calc(50% - 100px);/*centraliza verticalmente*/
+        }
+        #d3:hover{/*estilo específico para o elemento com id "d3"*/
+            font-size: 20px;/*tamanho da fonte*/
+            font-family: Arial, sans-serif;/*família da fonte*/
+            background-color: rgb(1, 112, 1);/*cor do texto*/
+            color: white;
+            top: calc(50% - 100px);/*centraliza verticalmente*/
+        }
+        img{/*estilo para a imagem dentro do div*/
+            width: 100%;/*largura total do div*/
+            height: auto;/*altura automática para manter a proporção*/
+            border-radius: 5px;/*bordas arredondadas*/
+        }
+        p{/*estilo para o parágrafo dentro do div*/
+            margin-top: 10px;/*margem superior*/
+            font-size: 14px;/*tamanho da fonte*/
+            color: rgb(0, 0, 0);/*cor do texto*/
+        }
+        p:hover{/*estilo para o parágrafo quando o mouse estiver sobre ele*/
+            color: rgb(249, 249, 249);/*cor do texto*/
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.youtube.com/embed/1UDuR1V9g1A?si=YrKCw64n9dgHmzn3" target="_blank" rel="nofollow">
+        <div id="d1"><img src="imagens/image.png" alt="imagem"> <p>Descrição da imagem 1</p></div>
+    </a>
+    <a href="https://www.youtube.com/embed/1UDuR1V9g1A?si=YrKCw64n9dgHmzn3" target="_blank" rel="nofollow">
+        <div id="d2"><img src="imagens/image.png" alt="imagem"> <p>Descrição da imagem 2</p></div>
+    </a>
+    <a href="https://www.youtube.com/embed/1UDuR1V9g1A?si=YrKCw64n9dgHmzn3" target="_blank" rel="nofollow">
+        <div id="d3"><img src="imagens/image.png" alt="imagem"> <p>Descrição da imagem 3</p></div>
+    </a>
+</body>
+</html>

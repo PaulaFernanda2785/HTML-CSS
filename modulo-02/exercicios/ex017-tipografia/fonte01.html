@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+</head>
+    <style>
+        body{
+            font-family:Verdana, monospace,sans-serif; /* Fonte padrão para o corpo */
+            text-align: justify; /* Justifica o texto */
+            padding: 2px; /* Adiciona espaçamento interno */
+            font-size: 16px;/* Tamanho da fonte */
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;/* Fonte para títulos */
+            /*medidas absolutas=cm, mm, in, px, pt, pc; */
+            /*medidas relativas: em, ex, rem, %, vw, vh */
+            /*16 px = 1 em = 100% */
+            font-size: 1.5em; /* Define o tamanho da fonte */
+            font-weight: bold;/* Define o peso da fonte: lighter, normal, bold, bolder */
+            font-style: italic; /* Define o estilo da fonte: normal, italic, oblique */
+            text-decoration: underline; /* Define a decoração do texto: none, underline, line-through */
+        }
+        h2{
+            /*shorthand font-propriedade de condensar*/
+            font: italic bold 1.5em 'Times New Roman', Times, serif;
+        }
+        hr{
+            border: 1px solid black; /* Define a borda da linha horizontal */
+            margin: 20px 0; /* Adiciona espaçamento acima e abaixo da linha */
+        }
+    </style>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo incidunt recusandae sapiente laboriosam suscipit saepe, reprehenderit repellat vel quos, doloremque eos pariatur magni placeat alias excepturi iste minus atque nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem ipsa, fuga sapiente mollitia molestiae magnam! Harum quo, magni velit saepe soluta, cupiditate adipisci dolore totam vero provident tempora. Qui!</p>
+    <hr> <!-- Linha horizontal -->
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia aperiam iste ipsum eaque doloribus sequi beatae molestiae commodi molestias at culpa, aliquam doloremque, officiis eveniet sed ex animi modi.</p>
+    <hr> <!-- Linha horizontal -->
+</body>
+</html>
