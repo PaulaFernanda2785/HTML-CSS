@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 500px;
+        border-collapse: collapse;
+    }
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    td.num{
+        text-align: right;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.591,95</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168,79</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264,94</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">1.523,21</td>
+            </tr>
+            <tr>
+                <td>Pernamunco</td>
+                <td class="num">21.523,21</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">22.523,21</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num">23.523,21</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">2.523,21</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">5.523,21</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">6.523,21</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">7.523,21</td>
+            </tr>
+            <tr>
+                <td>Amazonia</td>
+                <td class="num">10.523,21</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">1.523,21</td>
+            </tr>
+            <tr>
+                <td>Esperito Santo</td>
+                <td class="num">7.523,21</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.523,21</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.523,21</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.523,21</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.523,21</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.523,21</td>
+            </tr>
+            <tr>
+                <td>Tocantis</td>
+                <td class="num">1.223,21</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">523,21</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">1.523,21</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>213.421,037</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
