@@ -27,6 +27,15 @@
         background-color: gray;
         color: white;
     }
+    /*tbody > tr:nth-child(2n){ ====efeito zebrado====
+        background-color: lightgray;
+    }*/
+    tbody > tr:nth-child(odd){/*linhas impar*/
+        background-color: lightgray;
+    }
+    tbody > tr:nth-child(even){/*linhas pares*/
+        background-color: white;
+    }
     td.num{
         text-align: right;
     }
