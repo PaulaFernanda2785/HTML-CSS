@@ -10,21 +10,16 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     table{
-        background-color: rgba(0, 0, 0, 0.468);
         width: 400px;
+        height: 400px;
         border-collapse: collapse;
-        border: 3px solid red;
-    }
-    tr.linha{
-        background-color: aqua;
     }
     td{
         border: 1px solid black;
         padding: 8px;
         text-align: center;
-    }
-    td.dado{
-        background-color: yellow;
+        vertical-align: middle;
+        
     }
 </style>
 <body>
@@ -43,20 +38,20 @@
             <td>A2</td>
             <td>A3</td>
         </tr>
-        <tr class="linha"> <!--segunda linha-->
+        <tr> <!--segunda linha-->
             <td>B1</td>
             <td>B2</td>
             <td>B3</td>
         </tr>
-        <tr class="linha"> <!--terceira linha-->
+        <tr> <!--terceira linha-->
             <td>C1</td>
             <td>C2</td>
             <td>C3</td>
         </tr>
-        <tr class="linha"> <!--quarta linha-->
+        <tr c> <!--quarta linha-->
             <td>D1</td>
             <td>D2</td>
-            <td class="dado">D3</td>
+            <td>D3</td>
         </tr>
     </table>
 </body>
