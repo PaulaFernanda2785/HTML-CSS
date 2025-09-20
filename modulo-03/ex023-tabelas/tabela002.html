@@ -10,6 +10,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     table{
+        position: relative;/*cabeçalho fixo*/
         width: 500px;
         border-collapse: collapse;
     }
@@ -23,9 +24,15 @@
         border: 1px solid black;
         padding: 5px;
     }
+
     thead, tfoot{
-        background-color: gray;
+        background-color:grey;
         color: white;
+    }
+    thead > tr > th{/*caveçalho fixo*/
+        position: sticky;
+        top: -1px;
+        background-color:grey;
     }
     /*tbody > tr:nth-child(2n){ ====efeito zebrado====
         background-color: lightgray;
