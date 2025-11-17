@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        div.conteiner{
+            display: flex;
+            background-color: aqua;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: beige;
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 150px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #i7{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur minima quod praesentium nesciunt voluptatem est molestias animi quia ratione? Recusandae eos minima provident. Aspernatur tempore corrupti culpa assumenda ipsam.</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quas similique facilis, a voluptatum quam excepturi hic adipisci exercitationem eligendi nesciunt natus dolor molestiae incidunt vero aut, illum assumenda! Ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus commodi rem vitae beatae, hic fugit sunt corrupti autem saepe magnam neque accusamus inventore provident sit, dolorem nam! Recusandae, reiciendis quos!</div>
+    </div>
+</body>
+</html>
