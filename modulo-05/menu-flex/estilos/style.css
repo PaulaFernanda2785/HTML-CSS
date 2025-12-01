@@ -27,12 +27,13 @@ header{
 }
 
 header >  h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.396);
 }
 
 header > nav{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -53,9 +54,9 @@ header > nav > a:hover{
 }
 main{
     background-color: white;
-    margin: 10px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.296);
+    margin: 10px;
 }
 
