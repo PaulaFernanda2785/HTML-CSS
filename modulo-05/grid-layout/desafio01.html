@@ -16,41 +16,43 @@
         }
 
         div.container{
-            border: 2px solid black;
+            background-color: black;
             height: 100vh;
+            width: 100vw;
             display: grid;
-            grid-template-rows: 1fr 100px 2fr 100px;
-            grid-template-columns: repeat(2, 1fr) 20%;
+            grid-template-rows: 100px 100px 1fr 100px;
+            grid-template-columns: 3fr 1fr;
+            gap: 5px;
             
         }
 
-        div.topo{
+        header.topo{
             background-color: blue;
-            grid-area: 1 / 1 / 2 / 4;
+            grid-area: 1 / 1 / 2 / 3;
             text-align: center;
         }
 
-        div.menu{
+        nav.menu{
             background-color: red;
-            grid-area: 2 / 1 / 3 / 4;
+            grid-area: 2 / 1 / 3 / 3;
             text-align: center;
         }
 
-        div.principal{
+        main.principal{
             background-color: aqua;
-            grid-area: 3 / 1 / 4 / 3;
+            grid-area: 3 / 1 / 4 / 2;
             text-align: center;
         }
 
-        div.secundario{
+        article.secundario{
             background-color: blueviolet;
-            grid-area: 3 / 3 / 4 / 4;
+            grid-area: 3 / 2 / 4 / 3;
             text-align: center;
         }
 
-        div.rodape{
+        footer.rodape{
             background-color: gray;
-            grid-area: 4 / 1 / 5 / 4;
+            grid-area: 4 / 1 / 5 / 3;
             text-align: center;
         }
 
@@ -58,11 +60,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="topo">topo</div>
-        <div class="menu">menu</div>
-        <div class="principal">principal</div>
-        <div class="secundario">secundario</div>
-        <div class="rodape">rodape</div>
+        <header class="topo">topo</header>
+        <nav class="menu">menu</nav>
+        <main class="principal">principal</main>
+        <article class="secundario">secundario</article>
+        <footer class="rodape">rodape</footer>
     </div>
 </body>
 </html>
